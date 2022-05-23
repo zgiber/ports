@@ -59,7 +59,7 @@ docker run --rm --name ports -p:8000:8000 ports
 
 Allows a client to upload a json structure as defined in the original task description. The JSON input is parsed as a stream. Existing entries are overwritten by the provided update.
 
-### GET /ports*
+### GET /ports
 
 Allows a client to retrieve port information. Provides an array of port objects ordered by port UN/LOCODE. Partial or paginated results are retrieved by providing `from_id` and `limit` parameters. If `from_id` is not provided then the first N entry is returned where N is defined by the `limit` parameter. If limit is not provided, then the maximum number of returned entries will be set to 1000.
 
@@ -106,5 +106,3 @@ curl -v 'localhost:8000/ports?from_id=ZWBUQ?limit=2'
 ]
 
 ```
-
-*Not strictly part of the original task description but this project fell inline with a few things that I wanted to try after reading the task description. Feel free to ignore it if irrelevant.
