@@ -41,6 +41,8 @@ The service listens on port 8000 by default, that can be overridden by the `addr
 
 ### Docker
 
+From the project root directory:
+
 - Build the container
 
 ```sh
